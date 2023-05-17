@@ -6,9 +6,8 @@ def thread1(i,q): # class body
   import time
   time.sleep(1)
   ret = i*i  # return value
-  q.put(ret)   # set value to queu
+  q.put(ret)   # set return value to queu
   return
-
 
 i=1   # counter
 q =queue.Queue()  # queue which stores a result of a thread
